@@ -38,8 +38,8 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: '',
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
       copy_button: 'Kopieren',
@@ -52,12 +52,12 @@
 
   <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello sdfasfdasdfslakj;lksdfj����˿�ط�World">
+<meta property="og:title" content="Hello sdfasfdasdfslakj;lksdfj拉克丝地方World">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;26&#x2F;hello-world&#x2F;index.html">
 <meta property="og:site_name" content="段某人的博客">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:updated_time" content="2019-10-26T12:47:12.208Z">
+<meta property="og:updated_time" content="2019-10-26T14:46:19.605Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2019/10/26/hello-world/">
@@ -74,7 +74,7 @@
   };
 </script>
 
-  <title>Hello sdfasfdasdfslakj;lksdfj����˿�ط�World | 段某人的博客</title>
+  <title>Hello sdfasfdasdfslakj;lksdfj拉克丝地方World | 段某人的博客</title>
   
 
 
@@ -149,9 +149,34 @@
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archiv</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Suche
+        </a>
+      </li>
   </ul>
 
 </nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Suche..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
 </div>
     </header>
 
@@ -188,7 +213,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello sdfasfdasdfslakj;lksdfj����˿�ط�World
+          Hello sdfasfdasdfslakj;lksdfj拉克丝地方World
         </h1>
 
         <div class="post-meta">
@@ -199,7 +224,7 @@
               <span class="post-meta-item-text">Veröffentlicht am</span>
               
 
-              <time title="Erstellt: 2019-10-26 18:00:45 / Geändert am: 20:47:12" itemprop="dateCreated datePublished" datetime="2019-10-26T18:00:45+08:00">2019-10-26</time>
+              <time title="Erstellt: 2019-10-26 18:00:45 / Geändert am: 22:46:19" itemprop="dateCreated datePublished" datetime="2019-10-26T18:00:45+08:00">2019-10-26</time>
             </span>
 
           
@@ -224,7 +249,7 @@
 
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>����Ŀ������ֻ���ʱ��ط� ������ ��<br>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>洒落的开发了手机打发时间地方 京东方 是<br>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
     </div>
 
@@ -243,7 +268,7 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2019/10/26/z%E8%BF%99%E6%98%AF%E7%AC%AC%E4%BA%8C%E4%B8%AA%E4%B8%BB%E9%A2%98/" rel="prev" title="test_my_site">
+                <a href="/2019/10/26/test-my-site/" rel="prev" title="test_my_site">
                   test_my_site <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
@@ -372,6 +397,8 @@
 
 
 
+
+  <script src="/js/local-search.js"></script>
 
 
 

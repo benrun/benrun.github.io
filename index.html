@@ -38,8 +38,8 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: '',
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
       copy_button: 'Kopieren',
@@ -148,9 +148,34 @@
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archiv</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Suche
+        </a>
+      </li>
   </ul>
 
 </nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Suche..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
 </div>
     </header>
 
@@ -356,63 +381,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh_CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/26/test-my-site/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="段某人">
-      <meta itemprop="description" content="测试阶段">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="段某人的博客">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/10/26/test-my-site/" class="post-title-link" itemprop="url">test_my_site</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
-
-              <time title="Erstellt: 2019-10-26 20:19:46" itemprop="dateCreated datePublished" datetime="2019-10-26T20:19:46+08:00">2019-10-26</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh_CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/26/z%E8%BF%99%E6%98%AF%E7%AC%AC%E4%BA%8C%E4%B8%AA%E4%B8%BB%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -470,6 +438,63 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh_CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/26/test-my-site/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="段某人">
+      <meta itemprop="description" content="测试阶段">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="段某人的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/10/26/test-my-site/" class="post-title-link" itemprop="url">test_my_site</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
+
+              <time title="Erstellt: 2019-10-26 20:19:46" itemprop="dateCreated datePublished" datetime="2019-10-26T20:19:46+08:00">2019-10-26</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh_CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/26/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -484,7 +509,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2019/10/26/hello-world/" class="post-title-link" itemprop="url">Hello sdfasfdasdfslakj;lksdfj����˿�ط�World</a>
+            <a href="/2019/10/26/hello-world/" class="post-title-link" itemprop="url">Hello sdfasfdasdfslakj;lksdfj拉克丝地方World</a>
         </h1>
 
         <div class="post-meta">
@@ -495,7 +520,7 @@
               <span class="post-meta-item-text">Veröffentlicht am</span>
               
 
-              <time title="Erstellt: 2019-10-26 18:00:45 / Geändert am: 20:47:12" itemprop="dateCreated datePublished" datetime="2019-10-26T18:00:45+08:00">2019-10-26</time>
+              <time title="Erstellt: 2019-10-26 18:00:45 / Geändert am: 22:46:19" itemprop="dateCreated datePublished" datetime="2019-10-26T18:00:45+08:00">2019-10-26</time>
             </span>
 
           
@@ -651,6 +676,8 @@
 
 
 
+
+  <script src="/js/local-search.js"></script>
 
 
 
