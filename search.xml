@@ -8,4 +8,30 @@
         <tag>照片</tag>
       </tags>
   </entry>
+  <entry>
+    <title>win10局域网络找不到其他电脑的解决方法</title>
+    <url>/2019/01/02/win10%E5%B1%80%E5%9F%9F%E7%BD%91%E7%BB%9C%E6%89%BE%E4%B8%8D%E5%88%B0%E5%85%B6%E4%BB%96%E7%94%B5%E8%84%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="win10局域网络找不到其他电脑的解决方法"><a href="#win10局域网络找不到其他电脑的解决方法" class="headerlink" title="win10局域网络找不到其他电脑的解决方法"></a>win10局域网络找不到其他电脑的解决方法</h1><h2 id="按照步骤"><a href="#按照步骤" class="headerlink" title="按照步骤"></a>按照步骤</h2><ul>
+<li>控制面板<ul>
+<li>程序<ul>
+<li>程序和功能<ul>
+<li>启用或关闭windows工程<ul>
+<li>SMB 1.0/CIFS文件共享支持<ul>
+<li>一路确定后重启电脑</li>
+<li><img src="https://i.loli.net/2019/10/28/VXfL61g7CqBuzPb.png" alt="微信截图_20191028220141.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>]]></content>
+      <tags>
+        <tag>局域网联网</tag>
+      </tags>
+  </entry>
 </search>
